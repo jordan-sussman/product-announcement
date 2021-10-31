@@ -7,7 +7,9 @@ Preview:<br>
 
 Built with:
 ```
-- Three.js (JavaScript)
+- JavaScript
+  - Three.js
+  - Webpack
 - HTML
 - CSS
 ```
