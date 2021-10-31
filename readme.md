@@ -1,13 +1,13 @@
 ## READ ME
 
-**Product Announcement** is an interactive and responsive mock product announcement website using Three.js. By the power of Three.js, as you scroll, the world (product) animates to fly over and away from you. More on Three.js can be found here - https://threejs.org. 
+**Product Announcement** is an interactive and responsive mock product announcement website leveraging Three.js for 3D object rendering, animation, and lighting. To round things off, the website also includes the usual suspects of HTML and CSS. 
 
 Preview:<br>
 ![](/static/img/website.gif)
 
 Built with:
 ```
-- Three.js (JavaScript)
+- JavaScript (Three.js)
 - HTML
 - CSS
 ```
