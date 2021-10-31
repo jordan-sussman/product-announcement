@@ -97,19 +97,14 @@ window.addEventListener('scroll', updateSphere);
 
 const clock = new THREE.Clock();
 
-const tick = () =>
-{
+const tick = () => {
     const elapsedTime = clock.getElapsedTime();
-
     // Update objects
     sphere.rotation.y = 0.5 * elapsedTime;
-
     // Render
     renderer.render(scene, camera);
-
     // Call tick again on the next frame
     window.requestAnimationFrame(tick);
 };
 
 tick();
-
