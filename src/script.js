@@ -11,10 +11,10 @@ const canvas = document.querySelector('canvas.webgl');
 // Scene
 const scene = new THREE.Scene();
 
-// Objects
+// Object
 const geometry = new THREE.SphereBufferGeometry(0.5, 64, 64);
 
-// Materials
+// Material
 const material = new THREE.MeshStandardMaterial();
 material.metalness = 0.7;
 material.roughness = 0.2;
@@ -25,7 +25,9 @@ material.color = new THREE.Color(0x292929);
 const sphere = new THREE.Mesh(geometry,material);
 scene.add(sphere);
 
-// Lights
+/**
+ * Lights
+ */
 // Main Light
 const pointLight = new THREE.PointLight(0xffffff, 0.1);
 pointLight.position.x = 2;
@@ -51,7 +53,6 @@ const sizes = {
     width: window.innerWidth,
     height: window.innerHeight
 };
-
 window.addEventListener('resize', () => {
     // Update sizes
     sizes.width = window.innerWidth;
@@ -69,7 +70,6 @@ window.addEventListener('resize', () => {
 /**
  * Camera
  */
-// Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100);
 camera.position.x = 0;
 camera.position.y = 0;
