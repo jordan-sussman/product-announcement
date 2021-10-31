@@ -88,7 +88,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
  * Animate
  */
 const updateSphere = (event) => {
-    sphere.position.y = window.scrollY * 0.001;
+    sphere.position.y = window.scrollY * 0.0015;
     sphere.position.z = window.scrollY * 0.003;
 };
 window.addEventListener('scroll', updateSphere);
